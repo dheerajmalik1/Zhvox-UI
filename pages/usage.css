@@ -9,6 +9,7 @@
     font-family: "Montserrat", sans-serif;
     list-style: none;
     text-decoration: none;
+    
 }
 
 html {
@@ -23,15 +24,34 @@ header{
     flex-wrap: wrap;
     align-items: center;
     height: 10vh;
-    
     width:100%;
 }
+.header-links, .icon{
+    margin:1rem;
+}
 
+.side-navbar{
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    /* remove below line debug */
+    background-color: brown;
+    margin:1rem;
+    transform: translate(0,0);
+    transition: transform 0.3s ease;
+}
 
-
-
-@media (min-width: 768px) {
+/* styles applied only if width<= 768px */
+/* Bug on desktop screen --- taking double px on desktop */
+@media screen and (max-width: 768px) {
     body{
-        background-color:blue;
+
+        background-color:lightcyan;
+    }
+    .icon{
+        display: none;
+    }
+    .side-navbar{
+        transform: translate(-300px,0);
     }
   }
