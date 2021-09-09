@@ -27,10 +27,15 @@ header{
 }
 
 
-
 .logo{
+    width:3rem;
     padding-left: 1rem;
 }
+
+.logo--img{
+    width:100%;
+}
+
 
 .documentaion-link{
     padding-right: 1rem;
@@ -67,6 +72,7 @@ header{
     padding:.3rem;
     margin: .4rem;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 .icon{

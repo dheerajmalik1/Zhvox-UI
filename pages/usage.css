@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-
-
 *{
     box-sizing: border-box;
     padding: 0;
@@ -14,8 +12,6 @@
 html {
     font-size: 17px;
   }
-  
-
 
 header{
     display: flex;
@@ -30,6 +26,14 @@ header{
     margin:1rem;
 }
 
+.logo{
+    width:3rem;
+}
+
+.logo--img{
+    width:100%;
+}
+
 .side-navbar{
     width: 30%;
     height: 100%;
@@ -40,6 +44,7 @@ header{
     transform: translate(0,0);
     transition: transform 0.3s ease;
 }
+
 .nav-links{
     display: flex;
     flex-direction: column;
