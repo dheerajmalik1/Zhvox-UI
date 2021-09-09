@@ -9,7 +9,6 @@
     font-family: "Montserrat", sans-serif;
     list-style: none;
     text-decoration: none;
-    
 }
 
 html {
@@ -20,12 +19,13 @@ html {
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     flex-wrap: wrap;
     align-items: center;
     height: 10vh;
     width:100%;
 }
+
 .header-links, .icon{
     margin:1rem;
 }
@@ -35,10 +35,20 @@ header{
     height: 100%;
     position: absolute;
     /* remove below line debug */
-    background-color: brown;
+    /* background-color: brown; */
     margin:1rem;
     transform: translate(0,0);
     transition: transform 0.3s ease;
+}
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav--link-item{
+    margin:.7rem 0;
+    font-size: .7rem;
 }
 
 /* styles applied only if width<= 768px */
