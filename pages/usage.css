@@ -59,10 +59,7 @@ header{
 /* styles applied only if width<= 768px */
 /* Bug on desktop screen --- taking double px on desktop */
 @media screen and (max-width: 768px) {
-    body{
-
-        background-color:lightcyan;
-    }
+    
     .icon{
         display: none;
     }
